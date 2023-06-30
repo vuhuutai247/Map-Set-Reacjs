@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        const s = new Set(1,2,3,4,5,4);
+        s.add(6); 
+        s.delete(2);
+        s.has(3);
+
+        const carnivoreAnimals = new Set(["tigers", "bears", "lion",])
+        const herbivoreAnimals = new Set(["panda", "elephant", "giraffe", "panda"])
+        carnivoreAnimals.add("crocodile");
+        herbivoreAnimals.delete("elephant");
+        const arr1 = [...carnivoreAnimals, ...herbivoreAnimals]
+        console.log(arr1)
+    </script>
+</body>
+</html>
